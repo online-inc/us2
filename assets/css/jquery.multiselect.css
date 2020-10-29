@@ -1,0 +1,202 @@
+.ms-options-wrap,
+.ms-options-wrap * {
+    box-sizing: border-box;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.ms-options-wrap > button:focus,
+.ms-options-wrap > button {
+    position: absolute;
+    width: 62%;
+    top: -1px;
+    left: -114px;
+    border-radius: 46px;
+    text-align: left;
+    border: 1px solid #d7d7d7;
+    background-color: #fff;
+    padding: 14px 20px 14.5px 12px;
+    margin-top: 1px;
+    font-size: 21px;
+    color: #aaa;
+	outline:none!important;
+    outline-offset: -2px;
+    white-space: nowrap;
+}
+
+.ms-options-wrap > button > span {
+    display: inline-block;
+    font-size:12px;
+    font-weight: bold;
+    color: #808080;
+}
+
+.ms-options-wrap > button[disabled] {
+    background-color: #e5e9ed;
+    color: #808080;
+    opacity: 0.6;
+}
+
+.ms-options-wrap > button:after {
+    content: ' ';
+    height: 0;
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    width: 0;
+    border: 6px solid rgba(0, 0, 0, 0);
+    border-top-color: #999;
+    margin-top: -3px;
+}
+
+.ms-options-wrap.ms-has-selections > button {
+    color: #333;
+}
+.ms-search{
+        display: block;
+}
+.ms-options-wrap > .ms-options {
+    position: absolute;    
+    max-height: 250px!important;
+    left: -389%;
+    top: 59px;
+    border-radius: 8px;
+    width: 376%;
+    margin-top: 1px;
+    margin-bottom: 20px;
+    background: white;
+    z-index: 50000;
+    border: 1px solid #aaa;
+    overflow: auto;
+    visibility: hidden;
+}
+
+.ms-options-wrap.ms-active > .ms-options {
+    visibility: visible
+}
+
+.ms-options-wrap > .ms-options > .ms-search input {
+    width: 76%;
+    padding: 4px 5px;
+    border: none;
+    border-bottom: 1px groove;
+    outline: none;
+}
+
+.ms-options-wrap > .ms-options .ms-selectall {
+    display: block;
+    font-size: .9em;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+.ms-options-wrap > .ms-options .ms-selectall:hover {
+    text-decoration: underline;
+}
+
+.ms-options-wrap > .ms-options > .ms-selectall.global {
+    margin: 4px 5px;
+    display: block;
+}
+
+.ms-options-wrap > .ms-options > ul,
+.ms-options-wrap > .ms-options > ul > li.optgroup ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;    
+}
+
+.ms-options-wrap > .ms-options > ul li.ms-hidden {
+    display: none;
+}
+
+.ms-options-wrap > .ms-options > ul > li.optgroup {
+    padding: 5px;
+}
+.ms-options-wrap > .ms-options > ul > li.optgroup + li.optgroup {
+    border-top: 1px solid #aaa;
+}
+
+.ms-options-wrap > .ms-options > ul > li.optgroup .label {
+    display: block;
+    padding: 5px 0 0 0;
+    font-weight: bold;
+}
+
+.ms-options-wrap > .ms-options > ul label {
+    position: relative;
+    display: inline-block;
+    width: 135px;
+    padding: 4px 4px 4px 5px;
+    margin: 1px 0;
+/*     border: 1px dotted transparent; */
+}
+.ms-options-wrap > .ms-options.checkbox-autofit > ul label,
+.ms-options-wrap > .ms-options.hide-checkbox > ul label {
+    padding: 4px;
+}
+
+.ms-options-wrap > .ms-options > ul label.focused,
+.ms-options-wrap > .ms-options > ul label:hover {
+    background-color: #efefef;
+    border-color: #999;
+}
+
+.ms-options-wrap > .ms-options > ul li.selected label {
+    background-color: #efefef;
+    border-color: transparent;
+}
+
+.ms-options-wrap > .ms-options > ul input[type="checkbox"] {
+    margin: 0 5px 0 0;
+    position: relative;
+    left: -56px;
+    top: 22px;
+}
+
+.ms-options-wrap > .ms-options.hide-checkbox > ul input[type="checkbox"] {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+}
+@media only screen and (max-width: 767px) and (min-width: 300px){
+    
+.ms-options-wrap > button:focus, .ms-options-wrap > button {
+    width: 25%;
+    top: -47px;
+    height: 47px;
+    left: 74%;
+    text-align: left;
+    padding: 5px 20px 14px 12px;    padding: 8px 20px 7px 12px;
+}
+}
+@media only screen and (max-width: 768px) and (min-width: 768px){
+.ms-options-wrap > button:focus, .ms-options-wrap > button {
+    left: -5px;
+    padding: 8px 20px 7px 12px;
+}
+}
+
+@media only screen and (max-width: 767px) and (min-width: 300px){
+    
+.ms-options-wrap > .ms-options {
+    width: 200px;
+    left: 3%;
+    top: 3px;
+    width: 95%;
+}
+.ms-options-wrap > button > span {
+    font-size: 10px;
+}
+}
+
+@media only screen and (max-width: 999px) and (min-width: 768px){
+    
+.ms-options-wrap > .ms-options {
+    left: -293%;
+    top: 61px;
+    width: 353%;
+}
+}
